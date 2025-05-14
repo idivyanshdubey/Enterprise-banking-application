@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: j
+  boot:
+    admin:
+      client:
+        url: "http://localhost:8081"
+
+server:
+  port: 8082
+  # address: 0.0.0.0   # Commented out like in the original properties file
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
