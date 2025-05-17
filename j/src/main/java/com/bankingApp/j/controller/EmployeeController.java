@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/employees")
-@CrossOrigin(origins = "*")  // Enable CORS for all origins
+@CrossOrigin(origins = "http://localhost:4200")  // Enable CORS for all origins
 public class EmployeeController {
     
     @Autowired

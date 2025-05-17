@@ -1,4 +1,23 @@
-2025-05-09 15:08:51 [http-nio-8080-exec-3] INFO  c.bankingApp.j.aspect.LoggingAspect - Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@61e752be]
-2025-05-09 15:08:51 [http-nio-8080-exec-3] INFO  c.bankingApp.j.aspect.LoggingAspect - Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@61e752be
-2025-05-09 15:09:34 [http-nio-8080-exec-10] INFO  c.bankingApp.j.aspect.LoggingAspect - Executing method: getEmployeeById with arguments: [1]
-2025-05-09 15:09:34 [http-nio-8080-exec-10] INFO  c.bankingApp.j.aspect.LoggingAspect - Method getEmployeeById executed successfully, returning: com.bankingApp.j.model.Employee@61e752be
+2025-05-16T16:52:14.019+05:30  INFO 21032 --- [j] [main] com.bankingApp.j.JApplicationTests       : Starting JApplicationTests using Java 21.0.6 with PID 21032 (started by 10827937 in c:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper\j)
+2025-05-16T16:52:14.019+05:30  INFO 21032 --- [j] [main] com.bankingApp.j.JApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T16:52:16.873+05:30  INFO 21032 --- [j] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-16T16:52:18.898+05:30  INFO 21032 --- [j] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-05-16T16:52:19.013+05:30  INFO 21032 --- [j] [main] com.bankingApp.j.JApplicationTests       : Started JApplicationTests in 5.51 seconds (process running for 6.881)
+2025-05-16T16:52:19.180+05:30 ERROR 21032 --- [j] [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.IllegalStateException: couldn't determine local port. Please set spring.boot.admin.client.instance.service-base-url.
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getLocalServerPort(DefaultApplicationFactory.java:205) ~[spring-boot-admin-client-3.1.0.jar:3.1.0]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getServiceBaseUrl(DefaultApplicationFactory.java:109) ~[spring-boot-admin-client-3.1.0.jar:3.1.0]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getServiceUrl(ServletApplicationFactory.java:62) ~[spring-boot-admin-client-3.1.0.jar:3.1.0]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-3.1.0.jar:3.1.0]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:165) ~[spring-boot-admin-client-3.1.0.jar:3.1.0]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-3.1.0.jar:3.1.0]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-3.1.0.jar:3.1.0]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.2.6.jar:6.2.6]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+

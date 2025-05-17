@@ -7,11 +7,16 @@ spring:
         url: "http://localhost:8081"
 
 server:
-  port: 8082
-  # address: 0.0.0.0   # Commented out like in the original properties file
+  port: 8080
 
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+
+logging:
+  file:
+    name: logs/application.log
+  level:
+    root: INFO

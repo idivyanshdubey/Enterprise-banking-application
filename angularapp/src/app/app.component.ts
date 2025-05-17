@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoggingService } from './LoggingService';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angularapp';
+  title: string;
+
+  constructor(private loggingService: LoggingService) {
+    this.title = this.getAppTitle();
+    this.loggingService.logInfo('AppComponent initialized');
+  }
+
+  private getAppTitle(): string {
+    return 'angularapp';
+  }
 }
