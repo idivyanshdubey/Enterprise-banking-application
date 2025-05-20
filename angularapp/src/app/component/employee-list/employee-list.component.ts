@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { Employee } from '../../models/Employee';
 import { EmployeeService } from '../../service/employee.service';
 import { CommonModule } from '@angular/common';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-employee-list',
@@ -10,7 +11,6 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./employee-list.component.css'], 
   standalone: true,
   imports: [CommonModule, FormsModule, ReactiveFormsModule]
-  
 })
 export class EmployeeListComponent implements OnInit {
   employees: Employee[] = [];
@@ -21,7 +21,8 @@ export class EmployeeListComponent implements OnInit {
   
   constructor(
     private employeeService: EmployeeService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private snackBar: MatSnackBar
   ) {
     this.employeeForm = this.fb.group({
       name: ['', [Validators.required]],
@@ -41,7 +42,7 @@ export class EmployeeListComponent implements OnInit {
       },
       error: (error) => {
         console.error('Error fetching employees:', error);
-        alert('Failed to load employees. Please try again later.');
+        this.showNotification('Failed to load employees. Please try again later.', 'Close');
       }
     });
   }
@@ -83,11 +84,11 @@ export class EmployeeListComponent implements OnInit {
           this.getEmployees();
           this.showForm = false;
           this.employeeForm.reset();
-          alert('Employee updated successfully!');
+          this.showNotification('Employee updated successfully!', 'Close');
         },
         error: (error) => {
           console.error('Error updating employee:', error);
-          alert('Failed to update employee. Please try again.');
+          this.showNotification('Failed to update employee. Please try again.', 'Close');
         }
       });
     } else {
@@ -96,11 +97,11 @@ export class EmployeeListComponent implements OnInit {
           this.getEmployees();
           this.showForm = false;
           this.employeeForm.reset();
-          alert('Employee added successfully!');
+          this.showNotification('Employee added successfully!', 'Close');
         },
         error: (error) => {
           console.error('Error adding employee:', error);
-          alert('Failed to add employee. Please try again.');
+          this.showNotification('Failed to add employee. Please try again.', 'Close');
         }
       });
     }
@@ -111,13 +112,22 @@ export class EmployeeListComponent implements OnInit {
       this.employeeService.deleteEmployee(id).subscribe({
         next: () => {
           this.getEmployees();
-          alert('Employee deleted successfully!');
+          this.showNotification('Employee deleted successfully!', 'Close');
         },
         error: (error) => {
           console.error('Error deleting employee:', error);
-          alert('Failed to delete employee. Please try again.');
+          this.showNotification('Failed to delete employee. Please try again.', 'Close');
         }
       });
     }
+  }
+
+  showNotification(message: string, action: string = 'OK') {
+    this.snackBar.open(message, action, {
+      duration: 3000,
+      verticalPosition: 'top',
+      horizontalPosition: 'right',
+      panelClass: ['custom-snackbar']
+    });
   }
 }

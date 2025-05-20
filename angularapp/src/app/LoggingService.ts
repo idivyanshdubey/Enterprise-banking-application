@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class LoggingService {
-  private apiUrl = 'http://localhost:8080/api/logs'; // Update if your backend logging endpoint is different
+  private apiUrl = 'http://localhost:8080/api/employees'; // Update if your backend logging endpoint is different
 
   constructor(private http: HttpClient) {}
 

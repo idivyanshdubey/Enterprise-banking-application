@@ -1,170 +1,313 @@
-2025-05-17T19:20:09.285+05:30  INFO 21280 --- [j] [main] com.bankingApp.j.JApplication            : Starting JApplication using Java 21.0.6 with PID 21280 (C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper\j\target\classes started by 10827937 in C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper)
-2025-05-17T19:20:09.298+05:30  INFO 21280 --- [j] [main] com.bankingApp.j.JApplication            : No active profile set, falling back to 1 default profile: "default"
-2025-05-17T19:20:11.584+05:30  INFO 21280 --- [j] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-17T19:20:11.605+05:30  INFO 21280 --- [j] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-17T19:20:11.606+05:30  INFO 21280 --- [j] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-17T19:20:11.680+05:30  INFO 21280 --- [j] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-17T19:20:11.681+05:30  INFO 21280 --- [j] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2299 ms
-2025-05-17T19:20:12.508+05:30  INFO 21280 --- [j] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-05-17T19:20:14.163+05:30  INFO 21280 --- [j] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
-2025-05-17T19:20:14.354+05:30  INFO 21280 --- [j] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-17T19:20:14.371+05:30  INFO 21280 --- [j] [main] com.bankingApp.j.JApplication            : Started JApplication in 5.824 seconds (process running for 6.355)
-2025-05-17T19:20:14.603+05:30  WARN 21280 --- [j] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=j, managementUrl=http://5CD413013B:8080/actuator, healthUrl=http://5CD413013B:8080/actuator/health, serviceUrl=http://5CD413013B:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": null. Further attempts are logged on DEBUG level
-2025-05-17T19:20:15.138+05:30  INFO 21280 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-17T19:20:15.139+05:30  INFO 21280 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-17T19:20:15.140+05:30  INFO 21280 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-17T19:20:23.789+05:30  INFO 21280 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@fb65489]
-2025-05-17T19:20:23.789+05:30  INFO 21280 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@fb65489
-2025-05-17T19:20:23.842+05:30  INFO 21280 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
-2025-05-17T19:20:23.843+05:30  INFO 21280 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@fb65489]
-2025-05-17T19:20:30.525+05:30  INFO 21280 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [1]
-2025-05-17T19:20:30.525+05:30  INFO 21280 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
-2025-05-17T19:20:30.542+05:30  INFO 21280 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
-2025-05-17T19:20:30.542+05:30  INFO 21280 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: []
-2025-05-17 19:31:51 [main] INFO  com.bankingApp.j.JApplication - Starting JApplication using Java 21.0.6 with PID 7860 (C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper\j\target\classes started by 10827937 in C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper)
-2025-05-17 19:31:51 [main] INFO  com.bankingApp.j.JApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-17 19:31:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-05-17 19:31:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-05-17 19:31:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-05-17 19:31:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-17 19:31:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-05-17 19:31:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2219 ms
-2025-05-17 19:31:55 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-05-17 19:31:56 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/actuator'
-2025-05-17 19:31:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-05-17 19:31:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-05-17 19:31:56 [main] INFO  com.bankingApp.j.JApplication - Started JApplication in 5.476 seconds (process running for 6.291)
-2025-05-17 19:31:56 [registrationTask1] WARN  d.c.b.a.c.r.ApplicationRegistrator - Failed to register application as Application(name=j, managementUrl=http://5CD413013B:8080/actuator, healthUrl=http://5CD413013B:8080/actuator/health, serviceUrl=http://5CD413013B:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": null. Further attempts are logged on DEBUG level
-2025-05-17 19:31:57 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-17 19:31:57 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-05-17 19:31:57 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-05-17 19:33:22 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-17 19:33:22 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-05-17 19:33:35 [main] INFO  com.bankingApp.j.JApplication - Starting JApplication using Java 21.0.6 with PID 2940 (C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper\j\target\classes started by 10827937 in C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper)
-2025-05-17 19:33:35 [main] INFO  com.bankingApp.j.JApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-17 19:33:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-05-17 19:33:37 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-05-17 19:33:37 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-05-17 19:33:37 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-17 19:33:37 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-05-17 19:33:37 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2093 ms
-2025-05-17 19:33:38 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-05-17 19:33:39 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/actuator'
-2025-05-17 19:33:39 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-05-17 19:33:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-05-17 19:33:39 [main] INFO  com.bankingApp.j.JApplication - Started JApplication in 4.945 seconds (process running for 5.586)
-2025-05-17 19:33:39 [registrationTask1] WARN  d.c.b.a.c.r.ApplicationRegistrator - Failed to register application as Application(name=j, managementUrl=http://5CD413013B:8080/actuator, healthUrl=http://5CD413013B:8080/actuator/health, serviceUrl=http://5CD413013B:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": null. Further attempts are logged on DEBUG level
-2025-05-17 19:33:40 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-17 19:33:40 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-05-17 19:33:40 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-05-17 19:34:34 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-17 19:34:34 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-05-17T19:34:52.120+05:30  INFO 14776 --- [j] [main] com.bankingApp.j.JApplication            : Starting JApplication using Java 21.0.6 with PID 14776 (C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper\j\target\classes started by 10827937 in C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper)
-2025-05-17T19:34:52.126+05:30  INFO 14776 --- [j] [main] com.bankingApp.j.JApplication            : No active profile set, falling back to 1 default profile: "default"
-2025-05-17T19:34:54.455+05:30  INFO 14776 --- [j] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-17T19:34:54.495+05:30  INFO 14776 --- [j] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-17T19:34:54.496+05:30  INFO 14776 --- [j] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-17T19:34:54.592+05:30  INFO 14776 --- [j] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-17T19:34:54.593+05:30  INFO 14776 --- [j] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2393 ms
-2025-05-17T19:34:55.514+05:30  INFO 14776 --- [j] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-05-17T19:34:57.064+05:30  INFO 14776 --- [j] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
-2025-05-17T19:34:57.159+05:30  INFO 14776 --- [j] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-17T19:34:57.170+05:30  INFO 14776 --- [j] [main] com.bankingApp.j.JApplication            : Started JApplication in 5.69 seconds (process running for 6.428)
-2025-05-17T19:34:57.372+05:30  WARN 14776 --- [j] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=j, managementUrl=http://5CD413013B:8080/actuator, healthUrl=http://5CD413013B:8080/actuator/health, serviceUrl=http://5CD413013B:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": null. Further attempts are logged on DEBUG level
-2025-05-17T19:34:57.705+05:30  INFO 14776 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-17T19:34:57.706+05:30  INFO 14776 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-17T19:34:57.707+05:30  INFO 14776 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-17T19:36:07.692+05:30  INFO 14776 --- [j] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-17T19:36:07.698+05:30  INFO 14776 --- [j] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-17 19:36:14 [main] INFO  com.bankingApp.j.JApplication - Starting JApplication using Java 21.0.6 with PID 11744 (C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper\j\target\classes started by 10827937 in C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper)
-2025-05-17 19:36:14 [main] INFO  com.bankingApp.j.JApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-17 19:36:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-05-17 19:36:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-05-17 19:36:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-05-17 19:36:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-17 19:36:16 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-05-17 19:36:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2329 ms
-2025-05-17 19:36:17 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-05-17 19:36:18 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/actuator'
-2025-05-17 19:36:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-05-17 19:36:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-05-17 19:36:18 [main] INFO  com.bankingApp.j.JApplication - Started JApplication in 5.24 seconds (process running for 6.15)
-2025-05-17 19:36:18 [registrationTask1] WARN  d.c.b.a.c.r.ApplicationRegistrator - Failed to register application as Application(name=j, managementUrl=http://5CD413013B:8080/actuator, healthUrl=http://5CD413013B:8080/actuator/health, serviceUrl=http://5CD413013B:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": null. Further attempts are logged on DEBUG level
-2025-05-17 19:36:19 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-17 19:36:19 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-05-17 19:36:19 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2025-05-17 19:42:07 [http-nio-8080-exec-1] INFO  o.a.tomcat.util.http.parser.Cookie - A cookie header was received [${jndi:dns://MDEDiscoverya797e5c1a7Cookie-8080}] that contained an invalid cookie. That cookie will be ignored.
- Note: further occurrences of this error will be logged at DEBUG level.
-2025-05-17 19:42:08 [http-nio-8080-exec-9] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
- Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
-java.lang.IllegalArgumentException: Invalid character found in the request target [/js/?${jndi:dns://MDEDiscoverya797e5c1a7SeenInTheWildGet-8080} ]. The valid characters are defined in RFC 7230 and RFC 3986
-	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:478)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-17 19:42:10 [http-nio-8080-exec-5] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
- Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
-java.lang.IllegalArgumentException: Invalid character found in the request target [/struts2-showcase/${jndi:dns://MDEDiscoverya797e5c1a7ApacheStruts2-8080} ]. The valid characters are defined in RFC 7230 and RFC 3986
-	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:486)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-17 19:42:10 [http-nio-8080-exec-7] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
- Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
-java.lang.IllegalArgumentException: Invalid character found in the request target [/analytics/telemetry/ph/api/hyper/send?_c=${jndi:dns://MDEDiscoverya797e5c1a7VMwarevCenter-8080}&i=test ]. The valid characters are defined in RFC 7230 and RFC 3986
-	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:478)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-17 19:42:10 [http-nio-8080-exec-4] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
- Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
-java.lang.IllegalArgumentException: Invalid character found in the request target [/api/v2/${jndi:dns://MDEDiscoverya797e5c1a7SeenInTheWildGet-8080} ]. The valid characters are defined in RFC 7230 and RFC 3986
-	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:486)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-17 19:42:10 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
-2025-05-17 19:42:12 [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
-2025-05-17 19:42:22 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-17 19:42:22 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-05-17T19:42:26.468+05:30  INFO 19356 --- [j] [main] com.bankingApp.j.JApplication            : Starting JApplication using Java 21.0.6 with PID 19356 (C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper\j\target\classes started by 10827937 in C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper)
-2025-05-17T19:42:26.472+05:30  INFO 19356 --- [j] [main] com.bankingApp.j.JApplication            : No active profile set, falling back to 1 default profile: "default"
-2025-05-17T19:42:29.501+05:30  INFO 19356 --- [j] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-17T19:42:29.540+05:30  INFO 19356 --- [j] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-17T19:42:29.542+05:30  INFO 19356 --- [j] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-17T19:42:29.667+05:30  INFO 19356 --- [j] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-17T19:42:29.670+05:30  INFO 19356 --- [j] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3114 ms
-2025-05-17T19:42:30.693+05:30  INFO 19356 --- [j] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-05-17T19:42:32.482+05:30  INFO 19356 --- [j] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
-2025-05-17T19:42:32.626+05:30  INFO 19356 --- [j] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-17T19:42:32.643+05:30  INFO 19356 --- [j] [main] com.bankingApp.j.JApplication            : Started JApplication in 6.86 seconds (process running for 7.821)
-2025-05-17T19:42:32.809+05:30  WARN 19356 --- [j] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=j, managementUrl=http://5CD413013B:8080/actuator, healthUrl=http://5CD413013B:8080/actuator/health, serviceUrl=http://5CD413013B:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": null. Further attempts are logged on DEBUG level
-2025-05-17T19:42:34.789+05:30  INFO 19356 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-17T19:42:34.790+05:30  INFO 19356 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-17T19:42:34.791+05:30  INFO 19356 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-17T19:43:23.040+05:30  INFO 19356 --- [j] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-17T19:43:23.048+05:30  INFO 19356 --- [j] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-19T17:29:46.429+05:30  INFO 5024 --- [j] [main] com.bankingApp.j.JApplication            : Starting JApplication using Java 21.0.6 with PID 5024 (C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper\j\target\classes started by 10827937 in C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper)
+2025-05-19T17:29:46.435+05:30  INFO 5024 --- [j] [main] com.bankingApp.j.JApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-05-19T17:29:48.967+05:30  INFO 5024 --- [j] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-19T17:29:48.982+05:30  INFO 5024 --- [j] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-19T17:29:48.982+05:30  INFO 5024 --- [j] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-19T17:29:49.067+05:30  INFO 5024 --- [j] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-19T17:29:49.067+05:30  INFO 5024 --- [j] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2538 ms
+2025-05-19T17:29:49.995+05:30  INFO 5024 --- [j] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-19T17:29:51.507+05:30  INFO 5024 --- [j] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-05-19T17:29:51.662+05:30  INFO 5024 --- [j] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-19T17:29:51.676+05:30  INFO 5024 --- [j] [main] com.bankingApp.j.JApplication            : Started JApplication in 5.911 seconds (process running for 6.703)
+2025-05-19T17:29:51.968+05:30  WARN 5024 --- [j] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=j, managementUrl=http://10.210.118.62:8080/actuator, healthUrl=http://10.210.118.62:8080/actuator/health, serviceUrl=http://10.210.118.62:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": null. Further attempts are logged on DEBUG level
+2025-05-19T17:29:52.077+05:30  INFO 5024 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-19T17:29:52.078+05:30  INFO 5024 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-19T17:29:52.080+05:30  INFO 5024 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-19T17:30:05.087+05:30  INFO 5024 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@2380fa3]
+2025-05-19T17:30:05.087+05:30  INFO 5024 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@2380fa3
+2025-05-19T17:30:05.144+05:30  INFO 5024 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T17:30:05.145+05:30  INFO 5024 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@2380fa3]
+2025-05-19T17:30:25.815+05:30  INFO 5024 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@21cd64c8]
+2025-05-19T17:30:25.815+05:30  INFO 5024 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@21cd64c8
+2025-05-19T17:30:25.834+05:30  INFO 5024 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T17:30:25.836+05:30  INFO 5024 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@2380fa3, com.bankingApp.j.model.Employee@21cd64c8]
+2025-05-19T17:53:15.142+05:30  INFO 5024 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T17:53:15.146+05:30  INFO 5024 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@2380fa3, com.bankingApp.j.model.Employee@21cd64c8]
+2025-05-19T17:53:15.150+05:30  INFO 5024 --- [j] [http-nio-8080-exec-9] c.b.j.controller.FrontendLogController   : [FRONTEND] AppComponent initialized
+2025-05-19T17:55:01.858+05:30  INFO 5024 --- [j] [http-nio-8080-exec-2] c.b.j.controller.FrontendLogController   : [FRONTEND] AppComponent initialized
+2025-05-19T17:55:01.860+05:30  INFO 5024 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T17:55:01.861+05:30  INFO 5024 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@2380fa3, com.bankingApp.j.model.Employee@21cd64c8]
+2025-05-19T18:01:50.884+05:30  INFO 5024 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T18:01:50.885+05:30  INFO 5024 --- [j] [http-nio-8080-exec-6] c.b.j.controller.FrontendLogController   : [FRONTEND] AppComponent initialized
+2025-05-19T18:01:50.886+05:30  INFO 5024 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@2380fa3, com.bankingApp.j.model.Employee@21cd64c8]
+2025-05-19T18:01:58.637+05:30  INFO 5024 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Executing method: updateEmployee with arguments: [1, com.bankingApp.j.model.Employee@740a3afe]
+2025-05-19T18:01:58.637+05:30  INFO 5024 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Method updateEmployee executed successfully, returning: com.bankingApp.j.model.Employee@740a3afe
+2025-05-19T18:01:58.657+05:30  INFO 5024 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T18:01:58.657+05:30  INFO 5024 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@740a3afe, com.bankingApp.j.model.Employee@21cd64c8]
+2025-05-19T18:03:15.210+05:30  INFO 5024 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Executing method: updateEmployee with arguments: [1, com.bankingApp.j.model.Employee@4b7313ec]
+2025-05-19T18:03:15.214+05:30  INFO 5024 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Method updateEmployee executed successfully, returning: com.bankingApp.j.model.Employee@4b7313ec
+2025-05-19T18:03:15.256+05:30  INFO 5024 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T18:03:15.261+05:30  INFO 5024 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@4b7313ec, com.bankingApp.j.model.Employee@21cd64c8]
+2025-05-19T18:03:22.625+05:30  INFO 5024 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [1]
+2025-05-19T18:03:22.630+05:30  INFO 5024 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T18:03:22.671+05:30  INFO 5024 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T18:03:22.678+05:30  INFO 5024 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@21cd64c8]
+2025-05-19T18:03:36.924+05:30  INFO 5024 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [2]
+2025-05-19T18:03:36.927+05:30  INFO 5024 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T18:03:36.965+05:30  INFO 5024 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T18:03:36.969+05:30  INFO 5024 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: []
+2025-05-19T18:03:56.508+05:30  INFO 5024 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@7a87f9ea]
+2025-05-19T18:03:56.510+05:30  INFO 5024 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@7a87f9ea
+2025-05-19T18:03:56.543+05:30  INFO 5024 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T18:03:56.547+05:30  INFO 5024 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@7a87f9ea]
+2025-05-19T18:06:29.581+05:30  INFO 5024 --- [j] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-19T18:06:29.595+05:30  INFO 5024 --- [j] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-19T21:12:01.774+05:30  INFO 21116 --- [j] [main] com.bankingApp.j.JApplication            : Starting JApplication using Java 21.0.6 with PID 21116 (C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper\j\target\classes started by 10827937 in C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper)
+2025-05-19T21:12:01.784+05:30  INFO 21116 --- [j] [main] com.bankingApp.j.JApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-05-19T21:12:06.782+05:30  INFO 21116 --- [j] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-19T21:12:06.837+05:30  INFO 21116 --- [j] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-19T21:12:06.839+05:30  INFO 21116 --- [j] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-19T21:12:07.000+05:30  INFO 21116 --- [j] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-19T21:12:07.002+05:30  INFO 21116 --- [j] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5006 ms
+2025-05-19T21:12:08.359+05:30  INFO 21116 --- [j] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-19T21:12:10.780+05:30  INFO 21116 --- [j] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-05-19T21:12:10.969+05:30  INFO 21116 --- [j] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-19T21:12:11.004+05:30  INFO 21116 --- [j] [main] com.bankingApp.j.JApplication            : Started JApplication in 10.537 seconds (process running for 12.412)
+2025-05-19T21:12:11.394+05:30  WARN 21116 --- [j] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=j, managementUrl=http://5CD413013B:8080/actuator, healthUrl=http://5CD413013B:8080/actuator/health, serviceUrl=http://5CD413013B:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": null. Further attempts are logged on DEBUG level
+2025-05-19T21:12:12.872+05:30  INFO 21116 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-19T21:12:12.886+05:30  INFO 21116 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-19T21:12:12.891+05:30  INFO 21116 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-19T21:12:45.848+05:30  INFO 21116 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:12:45.850+05:30  INFO 21116 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: []
+2025-05-19T21:12:45.951+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@3dedf708]
+2025-05-19T21:12:45.953+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@3dedf708
+2025-05-19T21:13:00.433+05:30  INFO 21116 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@2342af06]
+2025-05-19T21:13:00.433+05:30  INFO 21116 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@2342af06
+2025-05-19T21:13:00.453+05:30  INFO 21116 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:13:00.463+05:30  INFO 21116 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@3dedf708, com.bankingApp.j.model.Employee@2342af06]
+2025-05-19T21:13:10.417+05:30  INFO 21116 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [1]
+2025-05-19T21:13:10.417+05:30  INFO 21116 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:13:10.443+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:13:10.447+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@2342af06]
+2025-05-19T21:13:15.667+05:30  INFO 21116 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [2]
+2025-05-19T21:13:15.667+05:30  INFO 21116 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:13:15.679+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:13:15.688+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: []
+2025-05-19T21:13:27.622+05:30  INFO 21116 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@385aad03]
+2025-05-19T21:13:27.624+05:30  INFO 21116 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@385aad03
+2025-05-19T21:13:27.648+05:30  INFO 21116 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:13:27.651+05:30  INFO 21116 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@385aad03]
+2025-05-19T21:13:39.489+05:30  INFO 21116 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Executing method: updateEmployee with arguments: [3, com.bankingApp.j.model.Employee@63cb4b3e]
+2025-05-19T21:13:39.489+05:30  INFO 21116 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Method updateEmployee executed successfully, returning: com.bankingApp.j.model.Employee@63cb4b3e
+2025-05-19T21:13:39.505+05:30  INFO 21116 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:13:39.505+05:30  INFO 21116 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@63cb4b3e]
+2025-05-19T21:13:50.122+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [3]
+2025-05-19T21:13:50.123+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:13:50.143+05:30  INFO 21116 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:13:50.146+05:30  INFO 21116 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: []
+2025-05-19T21:14:01.599+05:30  INFO 21116 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@1685f307]
+2025-05-19T21:14:01.599+05:30  INFO 21116 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@1685f307
+2025-05-19T21:14:01.615+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:14:01.615+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@1685f307]
+2025-05-19T21:14:06.131+05:30  INFO 21116 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [4]
+2025-05-19T21:14:06.131+05:30  INFO 21116 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:14:06.153+05:30  INFO 21116 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:14:06.153+05:30  INFO 21116 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: []
+2025-05-19T21:19:43.230+05:30  INFO 21116 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@19fce61a]
+2025-05-19T21:19:43.231+05:30  INFO 21116 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@19fce61a
+2025-05-19T21:19:51.263+05:30  INFO 21116 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@1215dd18]
+2025-05-19T21:19:51.264+05:30  INFO 21116 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@1215dd18
+2025-05-19T21:19:56.753+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:19:56.754+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@19fce61a, com.bankingApp.j.model.Employee@1215dd18]
+2025-05-19T21:20:03.692+05:30  INFO 21116 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [5]
+2025-05-19T21:20:03.705+05:30  INFO 21116 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:20:03.722+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:20:03.722+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@1215dd18]
+2025-05-19T21:20:06.846+05:30  INFO 21116 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [6]
+2025-05-19T21:20:06.847+05:30  INFO 21116 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:20:06.866+05:30  INFO 21116 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:20:06.866+05:30  INFO 21116 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: []
+2025-05-19T21:20:17.107+05:30  INFO 21116 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@110131bc]
+2025-05-19T21:20:17.107+05:30  INFO 21116 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@110131bc
+2025-05-19T21:20:17.120+05:30  INFO 21116 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:20:17.120+05:30  INFO 21116 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@110131bc]
+2025-05-19T21:20:34.192+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Executing method: updateEmployee with arguments: [7, com.bankingApp.j.model.Employee@6a960d5c]
+2025-05-19T21:20:34.195+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Method updateEmployee executed successfully, returning: com.bankingApp.j.model.Employee@6a960d5c
+2025-05-19T21:20:34.208+05:30  INFO 21116 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:20:34.212+05:30  INFO 21116 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@6a960d5c]
+2025-05-19T21:21:26.979+05:30  INFO 21116 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@2df9c176]
+2025-05-19T21:21:26.981+05:30  INFO 21116 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@2df9c176
+2025-05-19T21:21:26.981+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:21:26.982+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@6a960d5c, com.bankingApp.j.model.Employee@2df9c176]
+2025-05-19T21:21:44.615+05:30  INFO 21116 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@3c653ed0]
+2025-05-19T21:21:44.616+05:30  INFO 21116 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@3c653ed0
+2025-05-19T21:21:44.618+05:30  INFO 21116 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:21:44.619+05:30  INFO 21116 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@6a960d5c, com.bankingApp.j.model.Employee@2df9c176, com.bankingApp.j.model.Employee@3c653ed0]
+2025-05-19T21:21:47.720+05:30  INFO 21116 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@7dd18268]
+2025-05-19T21:21:47.720+05:30  INFO 21116 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:21:47.720+05:30  INFO 21116 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@7dd18268
+2025-05-19T21:21:47.720+05:30  INFO 21116 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@6a960d5c, com.bankingApp.j.model.Employee@2df9c176, com.bankingApp.j.model.Employee@3c653ed0, com.bankingApp.j.model.Employee@7dd18268]
+2025-05-19T21:21:55.409+05:30  INFO 21116 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [7]
+2025-05-19T21:21:55.409+05:30  INFO 21116 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:21:55.425+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:21:55.425+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@2df9c176, com.bankingApp.j.model.Employee@3c653ed0, com.bankingApp.j.model.Employee@7dd18268]
+2025-05-19T21:21:58.508+05:30  INFO 21116 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [8]
+2025-05-19T21:21:58.517+05:30  INFO 21116 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:21:58.537+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:21:58.537+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@3c653ed0, com.bankingApp.j.model.Employee@7dd18268]
+2025-05-19T21:22:01.311+05:30  INFO 21116 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [9]
+2025-05-19T21:22:01.316+05:30  INFO 21116 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:22:01.334+05:30  INFO 21116 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:22:01.334+05:30  INFO 21116 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@7dd18268]
+2025-05-19T21:22:04.097+05:30  INFO 21116 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [10]
+2025-05-19T21:22:04.101+05:30  INFO 21116 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:22:04.115+05:30  INFO 21116 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:22:04.115+05:30  INFO 21116 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: []
+2025-05-19T21:22:15.197+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@6ea984d6]
+2025-05-19T21:22:15.197+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@6ea984d6
+2025-05-19T21:22:15.210+05:30  INFO 21116 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:22:15.215+05:30  INFO 21116 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@6ea984d6]
+2025-05-19T21:22:23.008+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Executing method: updateEmployee with arguments: [11, com.bankingApp.j.model.Employee@f699723]
+2025-05-19T21:22:23.008+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Method updateEmployee executed successfully, returning: com.bankingApp.j.model.Employee@f699723
+2025-05-19T21:22:23.025+05:30  INFO 21116 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:22:23.027+05:30  INFO 21116 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@f699723]
+2025-05-19T21:22:29.594+05:30  INFO 21116 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [11]
+2025-05-19T21:22:29.594+05:30  INFO 21116 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:22:29.615+05:30  INFO 21116 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:22:29.615+05:30  INFO 21116 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: []
+2025-05-19T21:32:33.700+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@2bab0767]
+2025-05-19T21:32:33.709+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@2bab0767
+2025-05-19T21:32:33.721+05:30  INFO 21116 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:32:33.725+05:30  INFO 21116 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@2bab0767]
+2025-05-19T21:32:37.821+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [12]
+2025-05-19T21:32:37.821+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:32:37.832+05:30  INFO 21116 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:32:37.839+05:30  INFO 21116 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: []
+2025-05-19T21:32:40.247+05:30  INFO 21116 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@1b53b6af]
+2025-05-19T21:32:40.256+05:30  INFO 21116 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@1b53b6af
+2025-05-19T21:32:40.256+05:30  INFO 21116 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:32:40.256+05:30  INFO 21116 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@1b53b6af]
+2025-05-19T21:32:42.225+05:30  INFO 21116 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@4ad61b88]
+2025-05-19T21:32:42.225+05:30  INFO 21116 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:32:42.225+05:30  INFO 21116 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@4ad61b88
+2025-05-19T21:32:42.225+05:30  INFO 21116 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@1b53b6af, com.bankingApp.j.model.Employee@4ad61b88]
+2025-05-19T21:32:43.463+05:30  INFO 21116 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@345a405c]
+2025-05-19T21:32:43.463+05:30  INFO 21116 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@345a405c
+2025-05-19T21:32:43.463+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:32:43.463+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@1b53b6af, com.bankingApp.j.model.Employee@4ad61b88, com.bankingApp.j.model.Employee@345a405c]
+2025-05-19T21:33:11.282+05:30  INFO 21116 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@17ef24c3]
+2025-05-19T21:33:11.283+05:30  INFO 21116 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:33:11.284+05:30  INFO 21116 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@17ef24c3
+2025-05-19T21:33:11.285+05:30  INFO 21116 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@17ef24c3, com.bankingApp.j.model.Employee@1b53b6af, com.bankingApp.j.model.Employee@4ad61b88, com.bankingApp.j.model.Employee@345a405c]
+2025-05-19T21:33:18.905+05:30  INFO 21116 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [16]
+2025-05-19T21:33:18.908+05:30  INFO 21116 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:33:18.922+05:30  INFO 21116 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:33:18.925+05:30  INFO 21116 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@1b53b6af, com.bankingApp.j.model.Employee@4ad61b88, com.bankingApp.j.model.Employee@345a405c]
+2025-05-19T21:33:22.187+05:30  INFO 21116 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [13]
+2025-05-19T21:33:22.187+05:30  INFO 21116 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:33:22.208+05:30  INFO 21116 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:33:22.208+05:30  INFO 21116 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@4ad61b88, com.bankingApp.j.model.Employee@345a405c]
+2025-05-19T21:33:24.657+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [14]
+2025-05-19T21:33:24.660+05:30  INFO 21116 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:33:24.677+05:30  INFO 21116 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:33:24.679+05:30  INFO 21116 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@345a405c]
+2025-05-19T21:33:27.441+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [15]
+2025-05-19T21:33:27.442+05:30  INFO 21116 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:33:27.459+05:30  INFO 21116 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:33:27.461+05:30  INFO 21116 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: []
+2025-05-19T21:33:36.178+05:30  INFO 21116 --- [j] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-19T21:33:36.210+05:30  INFO 21116 --- [j] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-19T21:33:56.217+05:30  INFO 2240 --- [j] [main] com.bankingApp.j.JApplication            : Starting JApplication using Java 21.0.6 with PID 2240 (C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper\j\target\classes started by 10827937 in C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper)
+2025-05-19T21:33:56.226+05:30  INFO 2240 --- [j] [main] com.bankingApp.j.JApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-05-19T21:34:00.573+05:30  INFO 2240 --- [j] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-19T21:34:00.589+05:30  INFO 2240 --- [j] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-19T21:34:00.590+05:30  INFO 2240 --- [j] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-19T21:34:00.683+05:30  INFO 2240 --- [j] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-19T21:34:00.684+05:30  INFO 2240 --- [j] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4303 ms
+2025-05-19T21:34:02.222+05:30  INFO 2240 --- [j] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-19T21:34:05.146+05:30  INFO 2240 --- [j] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-05-19T21:34:05.319+05:30  INFO 2240 --- [j] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-19T21:34:05.353+05:30  INFO 2240 --- [j] [main] com.bankingApp.j.JApplication            : Started JApplication in 10.203 seconds (process running for 11.486)
+2025-05-19T21:34:05.720+05:30  WARN 2240 --- [j] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=j, managementUrl=http://5CD413013B:8080/actuator, healthUrl=http://5CD413013B:8080/actuator/health, serviceUrl=http://5CD413013B:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": null. Further attempts are logged on DEBUG level
+2025-05-19T21:34:07.396+05:30  INFO 2240 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-19T21:34:07.397+05:30  INFO 2240 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-19T21:34:07.399+05:30  INFO 2240 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-19T21:34:22.087+05:30  INFO 2240 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@7acf0876]
+2025-05-19T21:34:22.087+05:30  INFO 2240 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@7acf0876
+2025-05-19T21:34:22.190+05:30  INFO 2240 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:34:22.191+05:30  INFO 2240 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@7acf0876]
+2025-05-19T21:34:32.714+05:30  INFO 2240 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@3633f355]
+2025-05-19T21:34:32.714+05:30  INFO 2240 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@3633f355
+2025-05-19T21:34:32.714+05:30  INFO 2240 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:34:32.714+05:30  INFO 2240 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@7acf0876, com.bankingApp.j.model.Employee@3633f355]
+2025-05-19T21:34:34.292+05:30  INFO 2240 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:34:34.292+05:30  INFO 2240 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@4ef863ca]
+2025-05-19T21:34:34.292+05:30  INFO 2240 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@7acf0876, com.bankingApp.j.model.Employee@3633f355]
+2025-05-19T21:34:34.298+05:30  INFO 2240 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@4ef863ca
+2025-05-19T21:34:39.277+05:30  INFO 2240 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [2]
+2025-05-19T21:34:39.282+05:30  INFO 2240 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:34:39.306+05:30  INFO 2240 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:34:39.306+05:30  INFO 2240 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@7acf0876, com.bankingApp.j.model.Employee@4ef863ca]
+2025-05-19T21:34:43.479+05:30  INFO 2240 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [3]
+2025-05-19T21:34:43.481+05:30  INFO 2240 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T21:34:43.493+05:30  INFO 2240 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:34:43.509+05:30  INFO 2240 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@7acf0876]
+2025-05-19T21:57:13.810+05:30  INFO 2240 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:57:13.813+05:30  INFO 2240 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@7acf0876]
+2025-05-19T21:57:13.825+05:30  INFO 2240 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@10260d36]
+2025-05-19T21:57:13.827+05:30  INFO 2240 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@10260d36
+2025-05-19T21:57:16.214+05:30  INFO 2240 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@4ac7eecd]
+2025-05-19T21:57:16.214+05:30  INFO 2240 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:57:16.216+05:30  INFO 2240 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@4ac7eecd
+2025-05-19T21:57:16.216+05:30  INFO 2240 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@7acf0876, com.bankingApp.j.model.Employee@10260d36, com.bankingApp.j.model.Employee@4ac7eecd]
+2025-05-19T21:58:08.367+05:30  INFO 2240 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@4924c17]
+2025-05-19T21:58:08.367+05:30  INFO 2240 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@4924c17
+2025-05-19T21:58:08.375+05:30  INFO 2240 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:58:08.377+05:30  INFO 2240 --- [j] [http-nio-8080-exec-9] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@7acf0876, com.bankingApp.j.model.Employee@10260d36, com.bankingApp.j.model.Employee@4ac7eecd, com.bankingApp.j.model.Employee@4924c17]
+2025-05-19T21:58:13.196+05:30  INFO 2240 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:58:13.196+05:30  INFO 2240 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@4d7d08e5]
+2025-05-19T21:58:13.204+05:30  INFO 2240 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@7acf0876, com.bankingApp.j.model.Employee@10260d36, com.bankingApp.j.model.Employee@4ac7eecd, com.bankingApp.j.model.Employee@4924c17]
+2025-05-19T21:58:13.204+05:30  INFO 2240 --- [j] [http-nio-8080-exec-10] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@4d7d08e5
+2025-05-19T21:58:15.480+05:30  INFO 2240 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@14c0ee6a]
+2025-05-19T21:58:15.480+05:30  INFO 2240 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@14c0ee6a
+2025-05-19T21:58:15.480+05:30  INFO 2240 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:58:15.489+05:30  INFO 2240 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@7acf0876, com.bankingApp.j.model.Employee@10260d36, com.bankingApp.j.model.Employee@4ac7eecd, com.bankingApp.j.model.Employee@4924c17, com.bankingApp.j.model.Employee@4d7d08e5, com.bankingApp.j.model.Employee@14c0ee6a]
+2025-05-19T21:58:18.889+05:30  INFO 2240 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:58:18.893+05:30  INFO 2240 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@4d2d2843]
+2025-05-19T21:58:18.893+05:30  INFO 2240 --- [j] [http-nio-8080-exec-7] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@7acf0876, com.bankingApp.j.model.Employee@10260d36, com.bankingApp.j.model.Employee@4ac7eecd, com.bankingApp.j.model.Employee@4924c17, com.bankingApp.j.model.Employee@4d7d08e5, com.bankingApp.j.model.Employee@14c0ee6a]
+2025-05-19T21:58:18.893+05:30  INFO 2240 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@4d2d2843
+2025-05-19T21:58:21.892+05:30  INFO 2240 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T21:58:21.892+05:30  INFO 2240 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@5fc55c61]
+2025-05-19T21:58:21.900+05:30  INFO 2240 --- [j] [http-nio-8080-exec-5] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@7acf0876, com.bankingApp.j.model.Employee@10260d36, com.bankingApp.j.model.Employee@4ac7eecd, com.bankingApp.j.model.Employee@4924c17, com.bankingApp.j.model.Employee@4d7d08e5, com.bankingApp.j.model.Employee@14c0ee6a, com.bankingApp.j.model.Employee@4d2d2843]
+2025-05-19T21:58:21.900+05:30  INFO 2240 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@5fc55c61
+2025-05-19T22:01:17.950+05:30  INFO 16060 --- [j] [main] com.bankingApp.j.JApplication            : Starting JApplication using Java 21.0.6 with PID 16060 (C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper\j\target\classes started by 10827937 in C:\Users\10827937\OneDrive - LTIMindtree\Desktop\WorkSpaceProper)
+2025-05-19T22:01:17.958+05:30  INFO 16060 --- [j] [main] com.bankingApp.j.JApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-05-19T22:01:22.381+05:30  INFO 16060 --- [j] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-19T22:01:22.437+05:30  INFO 16060 --- [j] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-19T22:01:22.438+05:30  INFO 16060 --- [j] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-19T22:01:22.602+05:30  INFO 16060 --- [j] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-19T22:01:22.603+05:30  INFO 16060 --- [j] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4487 ms
+2025-05-19T22:01:23.907+05:30  INFO 16060 --- [j] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-19T22:01:26.304+05:30  INFO 16060 --- [j] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-05-19T22:01:26.510+05:30  INFO 16060 --- [j] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-19T22:01:26.534+05:30  INFO 16060 --- [j] [main] com.bankingApp.j.JApplication            : Started JApplication in 9.652 seconds (process running for 11.078)
+2025-05-19T22:01:26.890+05:30  WARN 16060 --- [j] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=j, managementUrl=http://5CD413013B:8080/actuator, healthUrl=http://5CD413013B:8080/actuator/health, serviceUrl=http://5CD413013B:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": null. Further attempts are logged on DEBUG level
+2025-05-19T22:01:28.949+05:30  INFO 16060 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-19T22:01:28.950+05:30  INFO 16060 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-19T22:01:28.952+05:30  INFO 16060 --- [j] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-19T22:01:37.015+05:30  INFO 16060 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T22:01:37.017+05:30  INFO 16060 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: []
+2025-05-19T22:01:37.259+05:30  INFO 16060 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@3ab7e17a]
+2025-05-19T22:01:37.260+05:30  INFO 16060 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@3ab7e17a
+2025-05-19T22:01:43.185+05:30  INFO 16060 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@6b32a92d]
+2025-05-19T22:01:43.185+05:30  INFO 16060 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T22:01:43.185+05:30  INFO 16060 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@6b32a92d
+2025-05-19T22:01:43.185+05:30  INFO 16060 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@3ab7e17a, com.bankingApp.j.model.Employee@6b32a92d]
+2025-05-19T22:01:52.292+05:30  INFO 16060 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [2]
+2025-05-19T22:01:52.292+05:30  INFO 16060 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T22:01:52.325+05:30  INFO 16060 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T22:01:52.325+05:30  INFO 16060 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@3ab7e17a]
+2025-05-19T22:09:13.869+05:30  INFO 16060 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [1]
+2025-05-19T22:09:13.869+05:30  INFO 16060 --- [j] [http-nio-8080-exec-1] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T22:09:13.900+05:30  INFO 16060 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T22:09:13.900+05:30  INFO 16060 --- [j] [http-nio-8080-exec-2] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: []
+2025-05-19T22:09:33.812+05:30  INFO 16060 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Executing method: createEmployee with arguments: [com.bankingApp.j.model.Employee@62836871]
+2025-05-19T22:09:33.812+05:30  INFO 16060 --- [j] [http-nio-8080-exec-4] com.bankingApp.j.aspect.LoggingAspect    : Method createEmployee executed successfully, returning: com.bankingApp.j.model.Employee@62836871
+2025-05-19T22:09:33.827+05:30  INFO 16060 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T22:09:33.832+05:30  INFO 16060 --- [j] [http-nio-8080-exec-3] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: [com.bankingApp.j.model.Employee@62836871]
+2025-05-19T22:09:46.112+05:30  INFO 16060 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Executing method: deleteEmployee with arguments: [3]
+2025-05-19T22:09:46.112+05:30  INFO 16060 --- [j] [http-nio-8080-exec-6] com.bankingApp.j.aspect.LoggingAspect    : Method deleteEmployee executed successfully, returning: null
+2025-05-19T22:09:46.131+05:30  INFO 16060 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Executing method: getAllEmployees with arguments: []
+2025-05-19T22:09:46.131+05:30  INFO 16060 --- [j] [http-nio-8080-exec-8] com.bankingApp.j.aspect.LoggingAspect    : Method getAllEmployees executed successfully, returning: []
+2025-05-19T22:18:16.314+05:30  INFO 16060 --- [j] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-19T22:18:16.345+05:30  INFO 16060 --- [j] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

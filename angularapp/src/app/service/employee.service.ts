@@ -6,14 +6,11 @@ import { Employee } from '../models/Employee';
 @Injectable({
   providedIn: 'root'
 })
-
 export class EmployeeService {
+  backendUrl = 'http://localhost:8080/api/employees';
 
-  backendUrl = "http://localhost:8080/api/employees";
+  constructor(private http: HttpClient) {}
 
-  constructor(private http:HttpClient) { }
-
-  
   // GET: Fetch all employees
   getEmployees(): Observable<Employee[]> {
     return this.http.get<Employee[]>(this.backendUrl);
