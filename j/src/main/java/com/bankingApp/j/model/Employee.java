@@ -10,18 +10,13 @@ import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
-
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 
 @Entity
 @Table(name = "employees")
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@ToString
 public class Employee {
     
     @Id
@@ -50,6 +45,15 @@ public class Employee {
     @PreUpdate
     protected void onUpdate() {
         updatedAt = LocalDateTime.now(ZoneId.of("Asia/Kolkata"));
+    }
+    
+    public Employee() {
+    }
+    
+    public Employee(String name, Integer age, String gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
     }
     
     public Long getId() {
@@ -100,9 +104,15 @@ public class Employee {
         this.updatedAt = updatedAt;
     }
     
-    public Employee(String name, Integer age, String gender) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", createdAt=" + createdAt +
+                ", updatedAt=" + updatedAt +
+                '}';
     }
 }

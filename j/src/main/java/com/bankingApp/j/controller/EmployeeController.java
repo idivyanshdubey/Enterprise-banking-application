@@ -1,13 +1,18 @@
 package com.bankingApp.j.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ByteArrayResource;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.bankingApp.j.model.Employee;
 import com.bankingApp.j.service.EmployeeService;
 import io.swagger.v3.oas.annotations.Operation;
+import org.springframework.http.MediaType;
+import org.springframework.core.io.Resource;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/employees")
@@ -73,4 +78,38 @@ public class EmployeeController {
             return ResponseEntity.notFound().build();
         }
     }
+    
+    @GetMapping("/stats")
+    @Operation(summary = "Get Employee Statistics", description = "Get statistics about employees.")
+    public ResponseEntity<Map<String, Object>> getEmployeeStats() {
+        try {
+            Map<String, Object> stats = service.getEmployeeStats();
+            return ResponseEntity.ok(stats);
+        } catch (Exception e) {
+            System.err.println("Error getting employee statistics: " + e.getMessage());
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+
+   @GetMapping("/export/csv")
+    @Operation(summary = "Export Employees to CSV", description = "Export all employees to a CSV file.")
+    public ResponseEntity<Resource> exportEmployeesToCsv() {
+        try {
+            String filename = "employees.csv";
+            ByteArrayResource resource = service.exportEmployeesToCsv();
+            
+            return ResponseEntity.ok()
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=" + filename)
+                .contentType(MediaType.parseMediaType("text/csv"))
+                .body(resource);
+        } catch (Exception e) {
+            System.err.println("Error exporting employees to CSV: " + e.getMessage());
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
 }
+
+
+
