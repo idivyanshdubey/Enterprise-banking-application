@@ -129,5 +129,7 @@ export class EmployeeListComponent implements OnInit {
       horizontalPosition: 'right',
       panelClass: ['custom-snackbar']
     });
-  }
+  }    
 }
+ 
+

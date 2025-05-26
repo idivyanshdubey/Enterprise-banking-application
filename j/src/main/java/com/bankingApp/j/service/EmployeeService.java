@@ -1,46 +1,43 @@
 package com.bankingApp.j.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.bankingApp.j.model.Employee;
-
-import java.util.ArrayList;
-import java.util.HashMap;
+import com.bankingApp.j.repository.EmployeeRepository;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
+import java.util.Optional;
 
 @Service
 public class EmployeeService {
-
-    private final HashMap<Long, Employee> employeeMap = new HashMap<>();
-    private final AtomicLong idGenerator = new AtomicLong(1);
-
+    
+    @Autowired
+    private EmployeeRepository employeeRepository;
+    
     public List<Employee> getAllEmployees() {
-        return new ArrayList<>(employeeMap.values());
+        return employeeRepository.findAll();
     }
-
+    
     public Employee getEmployeeById(Long id) {
-        return employeeMap.get(id);
+        return employeeRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Employee not found with id: " + id));
     }
-
+    
     public Employee createEmployee(Employee employee) {
-        Long id = idGenerator.getAndIncrement();
-        employee.setId(id);
-        employeeMap.put(id, employee);
-        return employee;
+        return employeeRepository.save(employee);
     }
-
+    
     public Employee updateEmployee(Long id, Employee updatedEmployee) {
-        Employee existingEmployee = employeeMap.get(id);
-        if (existingEmployee != null) {
-            updatedEmployee.setId(id);
-            employeeMap.put(id, updatedEmployee);
-            return updatedEmployee;
-        }
-        return null;
+        Employee existingEmployee = getEmployeeById(id);
+        
+        existingEmployee.setName(updatedEmployee.getName());
+        existingEmployee.setAge(updatedEmployee.getAge());
+        existingEmployee.setGender(updatedEmployee.getGender());
+        
+        return employeeRepository.save(existingEmployee);
     }
-
+    
     public void deleteEmployee(Long id) {
-        employeeMap.remove(id);
+        Employee employee = getEmployeeById(id);
+        employeeRepository.delete(employee);
     }
 }

@@ -7,11 +7,11 @@ import { EmployeeListComponent } from './component/employee-list/employee-list.c
 import { provideHttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    
   ],
   imports: [
     CommonModule,
