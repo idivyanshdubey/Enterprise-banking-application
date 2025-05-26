@@ -3,14 +3,15 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { Employee } from '../../models/Employee';
 import { EmployeeService } from '../../service/employee.service';
 import { CommonModule } from '@angular/common';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-employee-list',
   templateUrl: './employee-list.component.html',
-  styleUrls: ['./employee-list.component.css'], 
+  styleUrls: ['./employee-list.component.css'],
   standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule]
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, MatSnackBarModule]
 })
 export class EmployeeListComponent implements OnInit {
   employees: Employee[] = [];
@@ -22,7 +23,8 @@ export class EmployeeListComponent implements OnInit {
   constructor(
     private employeeService: EmployeeService,
     private fb: FormBuilder,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    private http: HttpClient
   ) {
     this.employeeForm = this.fb.group({
       name: ['', [Validators.required]],
@@ -33,6 +35,8 @@ export class EmployeeListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getEmployees();
+    // Make sure showForm is explicitly set to false on init
+    this.showForm = false;
   }
 
   getEmployees() {
@@ -75,9 +79,9 @@ export class EmployeeListComponent implements OnInit {
       this.employeeForm.markAllAsTouched();
       return;
     }
-
+    
     const employeeData: Employee = this.employeeForm.value;
-
+    
     if (this.isEditing && this.currentEmployeeId) {
       this.employeeService.updateEmployee(this.currentEmployeeId, employeeData).subscribe({
         next: () => {
@@ -129,7 +133,14 @@ export class EmployeeListComponent implements OnInit {
       horizontalPosition: 'right',
       panelClass: ['custom-snackbar']
     });
-  }    
-}
- 
+  }
+    
+  downloadEmployeesCsv() {
+    // Show loading indicator
+    this.showNotification('Preparing CSV download...', 'Close');
+    
+    // Use window.location to trigger the file download
+    window.location.href = 'http://localhost:8080/api/employees/export/csv';
+  }
 
+}

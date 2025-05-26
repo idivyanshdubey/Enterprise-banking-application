@@ -72,6 +72,13 @@
       </tbody>
     </table>
   </div>
+  <div>
+      <!-- Add this button somewhere in your template -->
+<!-- Download CSV button with Material icon -->
+<button (click)="downloadEmployeesCsv()" class="download-btn mat-button">
+  <span class="material-icons">description</span>
+  Download CSV
+</button>
 
   <ng-template #noEmployees>
     <div class="no-data">

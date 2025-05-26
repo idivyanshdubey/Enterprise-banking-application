@@ -30,4 +30,10 @@ export class EmployeeService {
   deleteEmployee(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
+  getEmployeeStats(): Observable<any> {
+  return this.http.get<any>(`${this.apiUrl}/stats`);
+}
+  exportEmployeesToCsv(): Observable<Blob> {
+    return this.http.get(`${this.apiUrl}/export/csv`, { responseType: 'blob' });
+  }
 }
